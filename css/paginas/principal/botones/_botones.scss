@@ -1,0 +1,33 @@
+/* Estilos para botones en la pagina principal */
+.boton {
+  display: inline-block;
+ 
+  height: auto; 
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  color:$color0;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave al cambiar propiedades */
+}
+
+/* Colores de los botones */
+#rojo { background-color: #FF0000; }
+#verde { background-color: #0f9e0f; }
+#azul { background-color: #0000FF; }
+#amarillo { background-color: #c2c213; }
+#naranja { background-color: #FFA500; }
+#morado { background-color: #800080; }
+#rosa { background-color: #cc7483; }
+#cyan { background-color: $color3; }
+#gris { background-color: #494444; }
+#marron { background-color: #A52A2A; }
+
+/* Estilos al pasar el mouse por encima */
+.boton:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Sombra al pasar el mouse */
+}
