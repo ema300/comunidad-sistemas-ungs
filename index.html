@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icono.png" type="iconoGrupo">
+
+    <title>Comunidad Sistemas UNGS</title>
+
+    <!--LINK  -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div>
+        <nav class="navbar">
+
+            <!--   <div class="nav_logo">DEA</div>-->
+
+            <div class="nav_items" id="_items">
+                <a href="javascript:moverseA('')">Inicio</a>
+                <a href="https://chat.whatsapp.com/HSeWqR794iK063OzvlAdEQ">WhatsApp</a>
+                <a href="https://chat.whatsapp.com/HSeWqR794iK063OzvlAdEQ">Telegram</a>
+                <a href="https://discord.gg/Rr5cMfaPnt">Discord</a>
+                <a href="javascript:moverseA('')">Contactos</a>
+            </div>
+            <div class="nav_toggle" onclick="menu()" id="_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+        </nav>
+    </div>
+
+
+
+    <div class="container">
+
+        <div id="boton-switch">
+            <label class="switch">
+                <input type="checkbox" id="toggleTheme">
+                <span class="slider round"></span>
+            </label>
+
+        </div>
+        <img src="img/icono.png" alt="Icono" class="iconoGrupo">
+        <h1>Comunidad Sistemas UNGS</h1>
+       
+        <div id="nuestra-comunidad">
+
+                 <h3 style="text-align: center; width: 100%;">Ingresar al Grupos</h3>
+            <a href="https://chat.whatsapp.com/HSeWqR794iK063OzvlAdEQ" target="_blank">
+                <img src="img/wtp.png" alt="whatsapp" class="iconos">
+              </a>
+              
+              <a href="https://chat.whatsapp.com/HSeWqR794iK063OzvlAdEQ" target="_blank">
+                <img src="img/telegram.png" alt="telegram" class="iconos">
+              </a>
+              
+              <a href="https://discord.gg/Rr5cMfaPnt" target="_blank">
+                <img src="img/discord.png" alt="discord" class="iconos">
+              </a>
+
+
+
+
+
+        </div>
+        <!-- Busqueda -->
+        <div id="busqueda">
+            <input type="text" id="searchInput" placeholder="Buscar por nombre" onkeyup="filterButtons()">
+        </div>
+
+        <!-- Botones -->
+        <div id="link">
+            <button id="rojo" target="_blank" class="boton"
+                onclick="window.location.href='https://sso.ungs.edu.ar/acceso'">Campus Activa</button>
+            <button id="cyan" target="_blank" class="boton"
+                onclick="window.location.href='https://inscripciones.ungs.edu.ar/g3w3_3212/'">SIU Guaraní</button>
+            <button id="azul" target="_blank" class="boton"
+                onclick="window.location.href='https://drive.google.com/folderview?id=0By6HBM0G4nVhWEpjT0o0cy1jWjA'">Drive
+                1</button>
+            <button id="amarillo" target="_blank" class="boton"
+                onclick="window.location.href='https://drive.google.com/folderview?id=0By6HBM0G4nVhWEpjT0o0cy1jWjA'">Drive
+                2</button>
+            <button id="naranja" target="_blank" class="boton"
+                onclick="window.location.href='https://chat.whatsapp.com/L6bNB0eoruDGMW8lLLob2E'">Compra y
+                venta</button>
+            <button id="morado" target="_blank" class="boton"
+                onclick="window.location.href='https://www.google.com'">completar</button>
+            <button id="rosa" target="_blank" class="boton"
+                onclick="window.location.href='https://www.google.com'">completar</button>
+            <button id="verde" target="_blank" class="boton"
+                onclick="window.location.href='https://www.google.com'">completar</button>
+            <button id="gris" target="_blank" class="boton"
+                onclick="window.location.href='https://www.google.com'">completar</button>
+            <button id="marron" target="_blank" class="boton"
+                onclick="window.location.href='https://www.google.com'">Link grupos de otras carreras</button>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="copyright">
+        <!-- Copyright -->
+        &copy; 2023 Comunidad sistemas UNGS. Derechos reservados.
+    </div>
+    <!-- script-->
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
