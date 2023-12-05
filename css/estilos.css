@@ -58,7 +58,7 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #006ec9;
 }
 
 input:checked + .slider:before {
@@ -76,7 +76,7 @@ body.light-theme {
 }
 
 .light-theme input:checked + .slider {
-  background-color: #2196F3; /* Color cuando el switch está activado */
+  background-color: #006ec9; /* Color cuando el switch está activado */
 }
 
 /* Estilos para el dark-theme */
@@ -90,7 +90,7 @@ body.dark-theme {
 }
 
 .dark-theme input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #006ec9;
 }
 
 /* Estilos para botones en la pagina principal */
@@ -100,10 +100,10 @@ body.dark-theme {
   padding: 10px;
   margin: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 12px;
   color: rgb(214, 214, 214);
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1.1em;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s, box-shadow 0.3s;
@@ -140,7 +140,7 @@ body.dark-theme {
 }
 
 #cyan {
-  background-color: #2196F3;
+  background-color: #006ec9;
 }
 
 #gris {
@@ -191,6 +191,8 @@ body.dark-theme {
   height: 3em;
   padding: 0em 0em 0em 1em;
   border-radius: 5px;
+  font-size: 1.2em;
+  outline: none;
 }
 
 /* Estilos CSS para los iconos */
@@ -248,7 +250,7 @@ body.dark-theme {
   left: 4%;
   right: 4%;
   height: 60px;
-  background: red;
+  background: rgb(179, 4, 4);
   display: flex;
   align-content: flex-start;
   justify-content: flex-start;
@@ -270,8 +272,9 @@ body.dark-theme {
 
 .nav_items a {
   text-align: center;
-  margin: 1.2em;
-  color: rgb(89, 89, 89);
+  margin: 1.2em 1.2em 1.2em 1.2em;
+  font-size: 1.5em;
+  color: rgb(214, 214, 214);
   position: relative;
   text-decoration: none;
 }
@@ -312,14 +315,6 @@ body.dark-theme {
   background: rgba(0, 0, 0, 0.9019607843);
 }
 
-.nav_items a {
-  margin: 1.2em 1.2em 1.2em 1.2em;
-  font-size: 1.5em;
-  color: rgb(214, 214, 214);
-  position: relative;
-  text-decoration: none;
-}
-
 /*telefono*/
 /*tablet*/
 /*portatil*/
@@ -329,7 +324,7 @@ body.dark-theme {
     position: fixed;
     top: 0%;
     left: 17%;
-    background: red;
+    background: rgb(179, 4, 4);
     right: 17%;
     height: 4em;
     display: flex;
@@ -361,9 +356,11 @@ body.dark-theme {
   .nav_items a {
     text-align: center;
     margin: 1.2em;
+    font-size: 1em;
     color: rgb(214, 214, 214);
     position: relative;
     text-decoration: none;
+    font-weight: bolder;
   }
   .nav_items a::before {
     content: "";
@@ -372,7 +369,7 @@ body.dark-theme {
     bottom: 0;
     width: 0;
     height: 2px;
-    background: #2196F3;
+    background: #006ec9;
     transition: all 0.5s;
   }
   .nav_items a:hover::before {
