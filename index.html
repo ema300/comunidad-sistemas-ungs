@@ -1,119 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/icono.png" type="iconoGrupo">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/icono.png" type="iconoGrupo">
 
-    <title>Comunidad Sistemas UNGS</title>
+        <title>Comunidad Sistemas UNGS</title>
 
-    <!--LINK  -->
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
+        <!--LINK  -->
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
 
-<body>
+    <body>
 
-    <div>
-        <nav class="navbar">
+        <div>
+            <nav class="navbar">
 
-            <!--   <div class="nav_logo">DEA</div>-->
+                <!--   <div class="nav_logo">DEA</div>-->
 
-            <div class="nav_items" id="_items">
-                <a href="javascript:moverseA('')">Inicio</a>
-                <a href="https://chat.whatsapp.com/HSeWqR794iK063OzvlAdEQ">WhatsApp</a>
-                <a href="https://chat.whatsapp.com/HSeWqR794iK063OzvlAdEQ">Telegram</a>
-                <a href="https://discord.gg/Rr5cMfaPnt">Discord</a>
-                <a href="javascript:moverseA('')">Contactos</a>
+                <div class="nav_items" id="_items">
+                    <a href="javascript:moverseA('')">Inicio</a>
+                    <a href="https://chat.whatsapp.com/HSeWqR794iK063OzvlAdEQ">WhatsApp</a>
+                    <a href="https://chat.whatsapp.com/HSeWqR794iK063OzvlAdEQ">Telegram</a>
+                    <a href="https://discord.gg/Rr5cMfaPnt">Discord</a>
+                    <a href="javascript:moverseA('')">Contactos</a>
+                </div>
+                <div class="nav_toggle" onclick="menu()" id="_toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </nav>
+        </div>
+
+
+
+        <div class="container">
+
+            <div id="boton-switch">
+                <label class="switch">
+                    <input type="checkbox" id="toggleTheme">
+                    <span class="slider round"></span>
+                </label>
+
             </div>
-            <div class="nav_toggle" onclick="menu()" id="_toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+            <img src="img/icono.png" alt="Icono" class="iconoGrupo">
+            <h1>Comunidad Sistemas UNGS</h1>
+
+            <div id="nuestra-comunidad">
+
+                <h3 style="text-align: center; width: 100%;">Ingresar al Grupo</h3>
+                <a href="https://chat.whatsapp.com/HSeWqR794iK063OzvlAdEQ" target="_blank">
+                    <img src="img/wtp.png" alt="whatsapp" class="iconos">
+                </a>
+
+                <a href="https://chat.whatsapp.com/HSeWqR794iK063OzvlAdEQ" target="_blank">
+                    <img src="img/telegram.png" alt="telegram" class="iconos">
+                </a>
+
+                <a href="https://discord.gg/Rr5cMfaPnt" target="_blank">
+                    <img src="img/discord.png" alt="discord" class="iconos">
+                </a>
+
+
+
+
 
             </div>
+            <!-- Busqueda -->
+            <div id="busqueda">
+                <input type="text" id="searchInput" placeholder="Buscar por nombre" onkeyup="filterButtons()">
+            </div>
 
-        </nav>
-    </div>
+            <!-- Botones -->
+            <div id="link">
+                <button id="cyan" target="_blank" class="boton"
+                    onclick="window.location.href='https://sso.ungs.edu.ar/acceso'">Campus Activa</button>
+                <button id="cyan" target="_blank" class="boton"
+                    onclick="window.location.href='https://inscripciones.ungs.edu.ar/g3w3_3212/'">SIU Guaraní</button>
+                <button id="cyan" target="_blank" class="boton"
+                    onclick="window.location.href='https://drive.google.com/folderview?id=0By6HBM0G4nVhWEpjT0o0cy1jWjA'">Drive
+                    1</button>
+                <button id="cyan" target="_blank" class="boton"
+                    onclick="window.location.href='https://drive.google.com/folderview?id=0By6HBM0G4nVhWEpjT0o0cy1jWjA'">Drive
+                    2</button>
+                <button id="cyan" target="_blank" class="boton"
+                    onclick="window.location.href='https://chat.whatsapp.com/L6bNB0eoruDGMW8lLLob2E'">Compra y
+                    venta</button>
+                <button id="cyan" target="_blank" class="boton"
+                    onclick="window.location.href='https://docs.google.com/forms/d/11o1GFcB7C6eS68j-i8fPd7dcXf-sDh0k8hVVGsFiXoA/viewform?edit_requested=true'">Solicitud
+                    de materias aprobadas</button>
+                <button id="cyan" target="_blank" class="boton"
+                    onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSff8cmJ0k6WFee_smagzwUzZFTWTadUSewKzPzhNbLSUNZLEw/closedform'">Solicitud
+                    de excepción de correlatividad</button>
+                <button id="cyan" target="_blank" class="boton"
+                    onclick="window.location.href='https://www.ungs.edu.ar/wp-content/uploads/2023/03/DSA-No-2987-20-acredita-niveles-de-ingle%CC%81s.pdf'">Solicitud
+                    de acreditación de niveles inglés</button>
+                <button id="cyan" target="_blank" class="boton"
+                    onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSff8cmJ0k6WFee_smagzwUzZFTWTadUSewKzPzhNbLSUNZLEw/closedform'">Solicitud
+                    de excepción de correlatividad</button>
+                <button id="cyan" target="_blank" class="boton"
+                    onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScwVtFICt06r4m3Raaf7HbI_C6_AEjtYNv1QjndbYXXcaBk1g/closedform'">Solicitud
+                    de cambio/simultaneidad de carrera</button>
+                <button id="cyan" target="_blank" class="boton"
+                    onclick="window.location.href='https://www.ungs.edu.ar/wp-content/uploads/2018/03/calendario-academico-2024.pdf'">Calendario Academico 2024</button> <button id="cyan" target="_blank" class="boton"
+                    onclick="window.location.href='https://www.ungs.edu.ar/wp-content/uploads/2018/03/Calendario-Academico-2023-Corregido-1.pdf'"> Calendario Academico 2023
+                    </button>
+            </div>
 
 
-
-    <div class="container">
-
-        <div id="boton-switch">
-            <label class="switch">
-                <input type="checkbox" id="toggleTheme">
-                <span class="slider round"></span>
-            </label>
-
-        </div>
-        <img src="img/icono.png" alt="Icono" class="iconoGrupo">
-        <h1>Comunidad Sistemas UNGS</h1>
-       
-        <div id="nuestra-comunidad">
-
-                 <h3 style="text-align: center; width: 100%;">Ingresar al Grupo</h3>
-            <a href="https://chat.whatsapp.com/HSeWqR794iK063OzvlAdEQ" target="_blank">
-                <img src="img/wtp.png" alt="whatsapp" class="iconos">
-              </a>
-              
-              <a href="https://chat.whatsapp.com/HSeWqR794iK063OzvlAdEQ" target="_blank">
-                <img src="img/telegram.png" alt="telegram" class="iconos">
-              </a>
-              
-              <a href="https://discord.gg/Rr5cMfaPnt" target="_blank">
-                <img src="img/discord.png" alt="discord" class="iconos">
-              </a>
-
-
-
-
-
-        </div>
-        <!-- Busqueda -->
-        <div id="busqueda">
-            <input type="text" id="searchInput" placeholder="Buscar por nombre" onkeyup="filterButtons()">
-        </div>
-
-        <!-- Botones -->
-        <div id="link">
-            <button id="cyan" target="_blank" class="boton"
-                onclick="window.location.href='https://sso.ungs.edu.ar/acceso'">Campus Activa</button>
-            <button id="cyan" target="_blank" class="boton"
-                onclick="window.location.href='https://inscripciones.ungs.edu.ar/g3w3_3212/'">SIU Guaraní</button>
-            <button id="cyan"target="_blank" class="boton"
-                onclick="window.location.href='https://drive.google.com/folderview?id=0By6HBM0G4nVhWEpjT0o0cy1jWjA'">Drive
-                1</button>
-            <button id="cyan" target="_blank" class="boton"
-                onclick="window.location.href='https://drive.google.com/folderview?id=0By6HBM0G4nVhWEpjT0o0cy1jWjA'">Drive
-                2</button>
-            <button id="cyan"target="_blank" class="boton"
-                onclick="window.location.href='https://chat.whatsapp.com/L6bNB0eoruDGMW8lLLob2E'">Compra y
-                venta</button>
-            <button id="cyan" target="_blank" class="boton"
-                onclick="window.location.href='https://www.google.com'">completar</button>
-            <button id="cyan" target="_blank" class="boton"
-                onclick="window.location.href='https://www.google.com'">completar</button>
-            <button id="cyan" target="_blank" class="boton"
-                onclick="window.location.href='https://www.google.com'">completar</button>
-            <button id="cyan" target="_blank" class="boton"
-                onclick="window.location.href='https://www.google.com'">completar</button>
-            <button id="cyan" target="_blank" class="boton"
-                onclick="window.location.href='https://www.google.com'">Link grupos de otras carreras</button>
 
         </div>
 
-
-
-    </div>
-
-    <div class="copyright">
-        <!-- Copyright -->
-        &copy; 2023 Comunidad sistemas UNGS. Derechos reservados.
-    </div>
-    <!-- script-->
-    <script src="js/script.js"></script>
-</body>
+        <div class="copyright">
+            <!-- Copyright -->
+            &copy; 2023 Comunidad sistemas UNGS. Derechos reservados.
+        </div>
+        <!-- script-->
+        <script src="js/script.js"></script>
+    </body>
 
 
 </html>
