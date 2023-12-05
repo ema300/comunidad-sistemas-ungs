@@ -1,0 +1,381 @@
+@charset "UTF-8";
+/* Estilos general para la pagina */
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  margin-top: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* PIE DE PAGINA */
+.copyright {
+  text-align: right;
+  margin: 1em 0em 0em 0em;
+  padding: 1rem;
+}
+
+/* Estilos para el botón switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(214, 214, 214);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(214, 214, 214);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Estilos para el tema claro */
+body.light-theme {
+  background-color: rgb(214, 214, 214);
+  color: rgb(89, 89, 89); /* Color del texto */
+}
+
+.light-theme .slider {
+  background-color: rgb(89, 89, 89); /* Color del switch */
+}
+
+.light-theme input:checked + .slider {
+  background-color: #2196F3; /* Color cuando el switch está activado */
+}
+
+/* Estilos para el dark-theme */
+body.dark-theme {
+  background-color: #333;
+  color: rgb(214, 214, 214);
+}
+
+.dark-theme .slider {
+  background-color: rgb(89, 89, 89);
+}
+
+.dark-theme input:checked + .slider {
+  background-color: #2196F3;
+}
+
+/* Estilos para botones en la pagina principal */
+.boton {
+  display: inline-block;
+  height: 4em;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(214, 214, 214);
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  width: 12em;
+}
+
+/* Colores de los botones */
+#rojo {
+  background-color: #FF0000;
+}
+
+#verde {
+  background-color: #0f9e0f;
+}
+
+#azul {
+  background-color: #0000FF;
+}
+
+#amarillo {
+  background-color: rgb(138, 138, 0);
+}
+
+#naranja {
+  background-color: rgb(220, 95, 0);
+}
+
+#morado {
+  background-color: #800080;
+}
+
+#rosa {
+  background-color: #a4606b;
+}
+
+#cyan {
+  background-color: #2196F3;
+}
+
+#gris {
+  background-color: #494444;
+}
+
+#marron {
+  background-color: #A52A2A;
+}
+
+/* Estilos al pasar el mouse por encima */
+.boton:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Sombra al pasar el mouse */
+}
+
+#link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+#nuestra-comunidad {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+#boton-switch {
+  width: 100%;
+  text-align: right;
+  margin: 0em 7% 0em 0em;
+}
+
+#busqueda {
+  width: 90%;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+}
+
+#searchInput {
+  border: none;
+  width: 80%;
+  height: 3em;
+  padding: 0em 0em 0em 1em;
+  border-radius: 5px;
+}
+
+/* Estilos CSS para los iconos */
+.iconos {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.iconoGrupo {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  #link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  #busqueda {
+    width: 100%;
+    height: auto;
+    margin: 35px;
+    padding: 10px;
+  }
+  #searchInput {
+    border: none;
+    width: 46%;
+    height: 3em;
+    padding: 0em 0em 0em 1em;
+    border-radius: 5px;
+  }
+  /* Estilos CSS para los iconos */
+  .iconos {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+  }
+  .iconoGrupo {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+  }
+}
+/*menu */
+.navbar {
+  z-index: 2;
+  position: fixed;
+  top: 0%;
+  left: 4%;
+  right: 4%;
+  height: 60px;
+  background: red;
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  border-radius: 0em 0em 1em 1em;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.nav_items {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40em;
+  transform: translateX(-117%);
+  transition: 0.3s ease all;
+}
+
+.nav_items a {
+  text-align: center;
+  margin: 1.2em;
+  color: rgb(89, 89, 89);
+  position: relative;
+  text-decoration: none;
+}
+
+.nav_toggle {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.nav_toggle span {
+  width: 30px;
+  height: 4px;
+  background: rgb(214, 214, 214);
+  margin-bottom: 5px;
+  transform-origin: 5px 0px;
+  transition: all 0.2s linear;
+}
+
+.close span {
+  transform: rotate(45deg) translate(0px, 0px);
+}
+
+.close span:nth-child(2) {
+  display: none;
+}
+
+.close span:nth-child(3) {
+  transform: rotate(-45deg) translate(-5px, 1px);
+}
+
+.open {
+  transform: translateX(0) !important;
+}
+
+.nav_items {
+  border-radius: 0em 0em 1em 1em;
+  background: rgba(0, 0, 0, 0.9019607843);
+}
+
+.nav_items a {
+  margin: 1.2em 1.2em 1.2em 1.2em;
+  font-size: 1.5em;
+  color: rgb(214, 214, 214);
+  position: relative;
+  text-decoration: none;
+}
+
+/*telefono*/
+/*tablet*/
+/*portatil*/
+/*escritorio*/
+@media screen and (min-width: 993px) {
+  .navbar {
+    position: fixed;
+    top: 0%;
+    left: 17%;
+    background: red;
+    right: 17%;
+    height: 4em;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border-radius: 0em 0em 1em 1em;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .nav_items {
+    padding: 2em;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 0;
+    transform: translateX(0%);
+    transition: none;
+    align-items: center;
+    justify-content: center;
+    background: none;
+  }
+  .nav_toggle {
+    display: none;
+    /* flex-direction: column;*/
+    /*margin: 15px;*/
+  }
+  .nav_items a {
+    text-align: center;
+    margin: 1.2em;
+    color: rgb(214, 214, 214);
+    position: relative;
+    text-decoration: none;
+  }
+  .nav_items a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #2196F3;
+    transition: all 0.5s;
+  }
+  .nav_items a:hover::before {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=estilos.css.map */

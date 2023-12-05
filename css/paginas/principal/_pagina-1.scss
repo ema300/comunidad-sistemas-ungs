@@ -1,0 +1,97 @@
+@import "swicht/boton-swicht";
+@import "botones/botones";
+
+
+#link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+#nuestra-comunidad {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+#boton-switch{
+    width: 100%;
+    text-align: right;
+    margin: 0em 7% 0em 0em;
+}
+#busqueda{
+    width: 90%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+#searchInput {
+    border: none;
+    width: 80%;
+    height: 3em;
+    padding: 0em 0em 0em 1em;
+    border-radius: 5px;
+}
+
+
+ /* Estilos CSS para los iconos */
+ .iconos {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.iconoGrupo {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+@media screen and (min-width: 700px){
+    #link {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-evenly;
+    }
+
+    #busqueda {
+        width: 100%;
+        height: auto;
+        margin: 35px;
+        padding: 10px;
+    }
+    
+    
+    #searchInput {
+        border: none;
+        width: 46%;
+        height: 3em;
+        padding: 0em 0em 0em 1em;
+        border-radius: 5px;
+    }
+
+    /* Estilos CSS para los iconos */
+    .iconos {
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+    }
+
+    .iconoGrupo {
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+    }
+
+}
+

@@ -1,0 +1,91 @@
+/* Estilos para el botón switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $color0;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: $color0;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: $color3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+
+
+
+
+/* Estilos para el tema claro */
+body.light-theme {
+  background-color: $color0; 
+  color: $color1; /* Color del texto */
+}
+
+.light-theme .slider {
+  background-color: $color1; /* Color del switch */
+}
+
+.light-theme input:checked + .slider {
+  background-color: $color3; /* Color cuando el switch está activado */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Estilos para el dark-theme */
+  body.dark-theme {
+    background-color: $color2;
+    color: $color0;
+  }
+  
+  .dark-theme .slider {
+    background-color:$color1;
+  }
+  
+  .dark-theme input:checked + .slider {
+    background-color:$color3;
+  }
+  
+
+

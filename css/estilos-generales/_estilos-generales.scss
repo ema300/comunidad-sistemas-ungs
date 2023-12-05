@@ -1,0 +1,27 @@
+/* Estilos general para la pagina */
+@import "variables";
+
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+
+
+  }
+  
+  .container {
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    /* PIE DE PAGINA */
+    .copyright {
+      text-align: right;
+      margin: 1em 0em 0em 0em;
+      padding: 1rem;
+    }
+  
+  
