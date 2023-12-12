@@ -24,4 +24,11 @@ body {
       padding: 1rem;
     }
   
-  
+    @media screen and (min-width: 700px){
+       /* PIE DE PAGINA */
+    .copyright {
+      text-align: center;
+      margin: 1em 0em 0em 0em;
+      padding: 1rem;
+    }
+    }
