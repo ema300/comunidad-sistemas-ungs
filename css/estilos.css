@@ -382,4 +382,15 @@ body.dark-theme {
   .nav_items a:hover::before {
     width: 100% !important;
   }
+}
+#contacto {
+  display: flex;
+  width: 80%;
+  height: auto;
+  padding: 2em;
+  flex-direction: column;
+}
+
+a {
+  color: #006ec9;
 }/*# sourceMappingURL=estilos.css.map */
