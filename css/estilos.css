@@ -172,11 +172,14 @@ body.dark-theme {
 }
 
 #nuestra-comunidad {
+  background-color: rgba(94, 120, 130, 0.3607843137);
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: center;
+  border-radius: 12px;
+  padding: 17px;
 }
 
 #boton-switch {
@@ -319,7 +322,7 @@ body.dark-theme {
 
 .nav_items {
   border-radius: 0em 0em 1em 1em;
-  background: rgba(0, 0, 0, 0.9019607843);
+  background: rgba(22, 22, 22, 0.9);
 }
 
 /*telefono*/

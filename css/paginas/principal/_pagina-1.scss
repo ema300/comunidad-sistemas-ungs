@@ -11,11 +11,14 @@
 }
 
 #nuestra-comunidad {
+    background-color: #5e78825c;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: center;
+    border-radius: 12px;
+    padding: 17px;
 }
 #boton-switch{
     width: 100%;
